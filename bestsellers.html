@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+Group Members :
+  -  Jasjot Singh Benipal : 1008332494
+  -  Darren Trieu : 1008403611
+  -  Kyle Lam : 1008177090 
+
+To-do List:
+  1) Create Grid Layout
+  2) Header, navbar, footer that sticks while main body doesn't
+  3) Login page with remember the username of the user as well as admin login 
+  4) Main page containing 5 books of the week, paired with images so the order can be changed with js
+  5) Page foreach books, good reads summary, picture, with review to be added  with js
+  6) Admin page if admin login and can change order of top 5 books
+  7) Page that lists all reviews of books
+  8) Bestsellers page
+  9) Logout Feature
+  10) Folders, comments explaining, proper naming conventions
+  11) Accesibility Light Mode/Dark Mode
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>A2Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- This is entire website visable to user, it is CSS grid model -->
+  <div class="container">
+    <!-- This is website header -->
+    <div class="header" title="Goodreads Home Page"><a href="index.html">Goodreads</a></div>
+    <!-- This is website side-navigation bar -->
+    <div class="side-nav">
+      <ul class="nav-links">
+        <li title="Click to Login to your account"><a href="login-page.html">Login</a></li>
+        <li title="Click to see TOP 5 weekly books"><a href="bestsellers.html" target="_self">Bestsellers</a></li>
+        <li class="light" id="mode"><a>Dark Mode</a></li>
+        <div class="active"></div>
+      </ul>
+    </div>
+    <!-- This is website main-page content -->
+    <div class="main-page">
+      <div class="main-page-header">TOP 5 BOOKS OF THE WEEK!</div>
+      <div class="main-page-body">
+        <ul id="book-list">
+          <li><a href="top-5-books/great-expectations.html">Great Expectations</a></li>
+          <li><a href="top-5-books/diary-of-a-wimpy-kid.html">Diary of a Wimpy Kid</a></li>
+          <li><a href="top-5-books/end-of-days.html">End of Days</a></li>
+          <li><a href="top-5-books/age-of-miracles.html">Age of Miracles</a></li>
+          <li><a href="top-5-books/the-martian.html">The Martian</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- This is website footer with group member names -->
+    <div class="footer">
+      <p>Created By: Jasjot Benipal | Darren Trieu | Kyle Lam</p>
+    </div>
+  </div>
+  <!--
+  <div class="header">
+    <div class="side-nav">
+     <p class="header-text"><a href="index.html">Goodreads</a></p>
+      <ul class="nav-links">
+        <li title="Click to Login to your account"><a href="login-page.html">Login</a></li>
+        <li title="Click to see TOP 5 weekly books"><a href="bestsellers.html" target="_self">Bestsellers</a></li>
+        <li class ="light" id = "mode"><a>Dark Mode</a></li>
+          <div class="active"></div>
+      </ul>
+    </div>
+    <div class="main-page">
+      <div class="main-page-header">EDITORIAL CHOICE</div>
+      <div class="main-page-body-header">TOP 5 BOOKS OF THE WEEK!</div>
+      <div class="main-page-body-list">
+        <ul id="book-list">
+          <li><a href="top-5-books/great-expectations.html">Great Expectations</a></li>
+          <li><a href="top-5-books/dairy-of-a-wimpy-kid.html">Dairy of a Wimpy Kid</a></li>
+          <li><a href="top-5-books/dairy-of-a-wimpy-kid.html">End of Days</a></li>
+          <li><a href="top-5-books/dairy-of-a-wimpy-kid.html">Dairy of a Wimpy Kid</a></li>
+          <li><a href="top-5-books/dairy-of-a-wimpy-kid.html">Dairy of a Wimpy Kid</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Jasjot Benipal | Darren Trieu | Kyle Lam</p>
+  </div>
+  -->
+  <script src="script.js"></script>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right">   </script>
+  -->
+</body>
+
+</html>

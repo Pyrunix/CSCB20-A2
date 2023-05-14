@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<!-- This will be another page that we link to -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Great Expectations Book</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <!-- Link to get icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- This is entire website visable to user, it is CSS grid model -->
+  <div class="container">
+    <!-- This is website header -->
+    <div class="header" title="Goodreads Home Page"><a href="../index.html">Goodreads</a></div>
+    <!-- This is website side-navigation bar -->
+    <div class="side-nav">
+      <ul class="nav-links">
+        <li title="Click to Login to your account"><a href="../login-page.html">Login</a></li>
+        <li title="Click to see Bestsellers"><a href="../index.html" target="_self">Bestsellers</a></li>
+        <li class="light" id="mode"><a>Dark Mode</a></li>
+        <div class="active"></div>
+      </ul>
+    </div>
+
+    <!-- This is website main-page content -->
+    <div class="main-page">
+
+      <div class="main-page-body">
+
+        <h1>End of Days</h1>
+
+        <img src="book covers images/endofdays.jpg" height=500px>
+        <h1>Summary</h1>
+        <p>Another riveting page-turner from Canada's favourite teen author--and this time, the adventure takes place in
+          outer space.
+
+          It's 2012 and the world's most renowned astrophysicists, astronomers, and theoretical mathematicians have all
+          died within the same 12-month period. But as these scientists discover, none of them are really dead after
+          all. They have been taken hostage by alien forces. And while their family and friends are mourning their
+          passing, and with the help of a 16-year-old with rare gifts, they face the ultimate struggle of prevailing
+          over evil and returning themselves--and the earth--to safety.
+        </p>
+
+        <div class="reviews">
+          <h1>Reviews</h1>
+          <form>
+            <input name="text" id="review-input" placeholder="Leave a review" required></input>
+            <button type="button" id="review-submit">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </form>
+
+          <ul id="review-list">
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- This is website footer with group member names -->
+    <div class="footer">
+      <p>Created By: Jasjot Benipal | Darren Trieu | Kyle Lam</p>
+    </div>
+  </div>
+  <!-- This links the JS sheet -->
+  <script src="../script.js"></script>
+  <!-- <script src="json.js"></script> -->
+</body>
+
+</html>
